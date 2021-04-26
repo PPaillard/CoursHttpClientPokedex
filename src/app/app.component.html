@@ -1,47 +1,15 @@
-<div class="container">
+<div class="container" *ngFor="let card of listePokemon">
   <div class="card">
     <div class="inner-card">
       <div class="base-info">
-        <p>Evolves from Charmeleon</p>
+        <p>{{card.evolvesFrom}}</p>
       </div>
       <hr class="first-hr"/>
       <div class="title">
-        <h3>Charizard</h3>
-        <h3 class="hp">120 HP</h3>
+        <h3>{{card.name}}</h3>
+        <h3 class="hp">{{card.hp}} HP</h3>
       </div>
-      <img class="main-img" src="https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fapptrigger.com%2Ffiles%2F2016%2F10%2Fcharizard-pokemon-tcg-xy-evolutions.jpg&amp;w=850&amp;h=560&amp;c=sc" alt="Pokemon Main" width="220px" height="auto"/>
-      <div class="tiny-txt">
-        <P>©1995 Nintendo gamefreak ©1999 Wizards. 07/102</P>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="inner-card">
-      <div class="base-info">
-        <p>Evolves from Charmeleon</p>
-      </div>
-      <hr class="first-hr"/>
-      <div class="title">
-        <h3>Charizard</h3>
-        <h3 class="hp">120 HP</h3>
-      </div>
-      <img class="main-img" src="https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fapptrigger.com%2Ffiles%2F2016%2F10%2Fcharizard-pokemon-tcg-xy-evolutions.jpg&amp;w=850&amp;h=560&amp;c=sc" alt="Pokemon Main" width="220px" height="auto"/>
-      <div class="tiny-txt">
-        <P>©1995 Nintendo gamefreak ©1999 Wizards. 07/102</P>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="inner-card">
-      <div class="base-info">
-        <p>Evolves from Charmeleon</p>
-      </div>
-      <hr class="first-hr"/>
-      <div class="title">
-        <h3>Charizard</h3>
-        <h3 class="hp">120 HP</h3>
-      </div>
-      <img class="main-img" src="https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fapptrigger.com%2Ffiles%2F2016%2F10%2Fcharizard-pokemon-tcg-xy-evolutions.jpg&amp;w=850&amp;h=560&amp;c=sc" alt="Pokemon Main" width="220px" height="auto"/>
+      <img class="main-img" src="{{card.imageUrl}}" alt="Pokemon Main" width="220px" height="auto"/>
       <div class="tiny-txt">
         <P>©1995 Nintendo gamefreak ©1999 Wizards. 07/102</P>
       </div>
